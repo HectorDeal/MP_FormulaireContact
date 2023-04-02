@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    width: 100dvw;
+    height: 100dvh;
+    background: url(../img/ipad-clair.jpg);
+    color:white;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+}
+.message{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 55%;
+    margin: 2em;
+}
+.mail a {
+    text-decoration: none;
+    color: white;
+}
+.section {
+    display:flex;
+    height: 100%;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+
+    padding: 3em;
+    margin: 2em;
+    height: 75%;
+    width: 100%;
+
+    background: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+.top a {
+    display: flex;
+    justify-content: flex-end;
+}
+label {
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: auto;
+    margin-top: 2em;
+}
+
+.interrest {
+    display:flex;
+    flex-direction: column;
+    gap:4em;
+}
+
+select {
+    padding: 20px 22px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color:white;
+    border: 1px solid #FFFFFF;
+}
+select:focus {
+    border: solid transparent;
+    content: " ";
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    background: #000000;
+}
+
+input {
+    background: #000000;
+    color: white;
+    /* border-bottom: 1px solid white; */
+    border: none;
+    outline: none
+}
+.border-input{
+    border-bottom: 1px solid white;
+}
+.submit {
+    padding: 1em;
+    background: white;
+    color:black;
+}
+
+@media (max-width: 704px) {
+    .section {
+        flex-direction: column;
+    }
+    .message {
+        width: 88%;
+    }
+    .contact {
+        width: 100%;
+    }
+    .main {
+        height: auto;
+    }
+}
