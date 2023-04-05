@@ -58,22 +58,22 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
                                     </select>
                                     
                                 <label for="name">Nom
-                                <input type="text" name="name" id="name" placeholder="Ex : Phèdre.." required>
+                                <input type="text" name="name" id="name" pattern="^[A-Za-z]+((\s)?([A-Za-z])+)*$" placeholder="Ex : Phèdre.." required>
                                 <div class="border-input"></div>
                                 </label>
 
                                 <label for="lastname">Prénom
-                                <input type="text" name="lastname" id="lastname" placeholder="Ex : Jean.." required>
+                                <input type="text" name="lastname" pattern="^[A-Za-z]+((\s)?([A-Za-z])+)*$"" id="lastname" placeholder="Ex : Jean.." required>
                                 <div class="border-input"></div>
                                 </label>
 
                                 <label for="age">Âge
-                                <input type="text" name="age" id="age" placeholder="Ex : 22.." required>
+                                <input type="text" name="age" id="age" pattern="^(1[0-1][0-9]|[1-9][0-9]|[1-9])$" placeholder="Ex : 22.." required>
                                 <div class="border-input"></div>
                                 </label>
 
                                 <label for="price">Financement
-                                <input type="text" name="price" id="price" placeholder="Ex : 2500€.." required>
+                                <input type="text" name="price" id="price" pattern="[0-9]+([,.][0-9]+)*\s*[€\$£¥]?(\s*(k|K|M))?" placeholder="Ex : 2500€.." required>
                                 <div class="border-input"></div>
                                 </label>
 
